@@ -1,70 +1,103 @@
-# Salva Calouro - Sistema de Auxílio a Calouros
+# Salva Calouro
 
-## Problema
+Plataforma digital de orientação e integração para novos alunos da Universidade de Brasília (UnB), cruzando dados de localização física com o progresso acadêmico do estudante.
+
+## O Problema
 
 No contexto acadêmico da universidade, observa-se que os alunos ingressantes (calouros) enfrentam grande dificuldade de adaptação nos primeiros semestres devido à sobrecarga de informações fragmentadas e à complexidade do espaço físico.
 
-Como Sistema de Informação, o projeto visa mitigar as seguintes falhas do cenário atual:
-* **Desorientação geográfica:** Dificuldade em campi extensos para a localização de salas e prédios.
-* **Incompreensão burocrática:** Falta de clareza sobre as regras, o fluxo curricular e o funcionamento da matrícula.
-* **Ausência de canal centralizado:** Falta de um meio confiável que conecte as dúvidas dos novos alunos à experiência prévia dos veteranos.
+## A Solução
 
-## Escopo
+Um sistema colaborativo que une navegação espacial e planejamento acadêmico. O aplicativo atua como um guia interativo, conectando as dúvidas dos calouros à experiência dos veteranos. O objetivo principal é simplificar a geolocalização no campus e otimizar a gestão do fluxo curricular, transformando a adaptação universitária em uma jornada mais autônoma e fluida.
 
-A plataforma propõe um sistema digital de orientação e integração, cruzando dados de localização física com o progresso acadêmico do estudante.
+---
 
-* **Foco de Ação:** Navegação espacial e planejamento acadêmico.
-* **Mecanismo de Apoio:** Conexão colaborativa entre as dúvidas dos calouros e o conhecimento dos veteranos.
+## Configuração do Ambiente
 
-O sistema será documentado como um MVP (Produto Mínimo Viável) compreendendo:
-* Documentação de Requisitos e Backlog.
-* Modelagem Conceitual de Dados (MER/DER).
-* Protótipo de Alta Fidelidade (Figma).
+### Pré-requisitos
 
-## Stakeholders (Interessados)
+- **Python 3.8+** - Para execução do MkDocs
+- **pip** - Gerenciador de pacotes Python
+- **git** - Controle de versão
 
-Para o desenvolvimento deste sistema de informação, identificamos os seguintes atores principais:
-* **Calouros (Usuários Consumidores):** Buscam orientação espacial, acadêmica e informacional.
-* **Veteranos (Usuários Contribuintes):** Fornecem respostas, atualizações sobre o campus e suporte, sendo recompensados pelo engajamento.
-* **Administradores:** Responsáveis pela moderação do conteúdo, atualização do mapa e manutenção da base de dados.
-* **Universidade (Ambiente):** Provedora das regras de negócio (grades, pré-requisitos) e do espaço físico mapeado.
+### Instalação
 
-## Requisitos Funcionais
+```bash
+# Crie um ambiente virtual
+python3 -m venv .venv
 
-* **Cadastro e Gestão de Perfil:** Diferenciação de perfis entre Calouros e Veteranos.
-* **Mapa Interativo e Rotas:** Sistema de busca por localização de salas, laboratórios, prédios e serviços, com traçado de rotas dentro da universidade.
-* **Controle de Fluxo Curricular:** Interface para acompanhamento do histórico escolar, visualização da grade, explicação de matérias e alertas de pré-requisitos.
-* **Base de Conhecimento e FAQ:** Mecanismo de busca otimizado para dúvidas frequentes sobre processos universitários (matrícula, editais, etc.).
-* **Calendário Acadêmico Inteligente:** Apresentação das datas críticas da instituição.
-* **Sistema de Gamificação e Recompensas:** Atribuição de pontos ou conquistas para veteranos que auxiliam calouros ou cadastram informações úteis na plataforma.
+# Ative o ambiente virtual
+source .venv/bin/activate  # Linux/Mac
+# ou
+.venv\Scripts\activate     # Windows
 
-## Requisitos Não Funcionais e Regras de Negócio (Complemento)
+# Instale as dependências
+pip install mkdocs mkdocs-material
+```
 
-* **RNF1 (Usabilidade):** O sistema deve ser construído como uma aplicação web com design responsivo (Mobile-first), priorizando o uso em smartphones durante a locomoção pelo campus.
-* **RNF2 (Personalização Institucional):** O sistema deve permitir a adaptação de conteúdo, fluxos e mapas de acordo com o curso selecionado pelo usuário.
+---
 
-## Exemplos de Uso (User Stories)
+## Estrutura do Projeto
 
-* "Como calouro, quero visualizar a rota mais rápida da entrada do campus até a minha sala de aula para não me atrasar na primeira semana."
-* "Como calouro, quero marcar as disciplinas que já cursei para visualizar exatamente quais matérias estão liberadas para a minha próxima matrícula."
-* "Como veterano, quero responder dúvidas de calouros no fórum da plataforma para acumular pontos no sistema de gamificação."
+```text
+.
+├── docs/                    # Documentação do projeto
+│   ├── index.md            # Página inicial
+│   ├── requisitos/         # Requisitos funcionais e não-funcionais
+│   ├── epicos/             # Épicos do projeto
+│   └── ...
+├── overrides/              # Customizações do tema
+│   └── partials/           # Componentes HTML personalizados
+├── mkdocs.yml              # Configuração do MkDocs
+└── README.md               # Este arquivo
+```
 
-## Detalhes do Produto
+- **docs/**: Todos os arquivos markdown da documentação
+- **mkdocs.yml**: Configuração do site (tema, navegação, plugins)
+- **overrides/**: Customizações visuais do tema Material
 
-* **Modelo de Orientação:** A plataforma atua em dois eixos principais: Espaço (onde o aluno deve estar fisicamente) e Tempo (em qual etapa do curso o aluno se encontra).
+---
 
-## Épicos do Projeto (Backlog)
+## Desenvolvimento
 
-* **Gestão de Usuários:** Perfis, autenticação e níveis de acesso.
-* **Navegação Espacial:** Desenvolvimento do mapa interativo, marcações e rotas.
-* **Jornada Acadêmica:** Lógica do controle de fluxo, grade e histórico.
-* **Informação e Comunidade:** FAQ, base de conhecimento e fórum de dúvidas.
-* **Engajamento:** Lógica do sistema de gamificação e pontuação de veteranos.
+### Executar Localmente
 
-## Autores
+```bash
+# Ative o ambiente virtual (se ainda não ativado)
+source .venv/bin/activate
 
-* Caio Fernando Rocha de Albuquerque - 242034518
-* Davi Bragança e Silva - 242001473
-* Eric Wu Harris - 242001482
-* Roberto Ribeiro Correa de Oliveira Neto - 242009936
-* Victor Yan Martinez de Avila - 241032994
+# Inicie o servidor de desenvolvimento
+mkdocs serve
+```
+
+O site estará disponível em `http://127.0.0.1:8000`
+
+**Recursos do servidor de desenvolvimento:**
+- Auto-reload: Alterações nos arquivos são refletidas automaticamente
+- Live preview: Visualize mudanças em tempo real
+- Ctrl+C para interromper
+
+### Build para Produção
+
+```bash
+# Gera os arquivos estáticos na pasta site/
+mkdocs build
+```
+
+---
+
+## Comandos Úteis
+
+```bash
+# Servidor de desenvolvimento (com endereço específico)
+mkdocs serve -a 0.0.0.0:8000
+
+# Build limpo (remove cache anterior)
+mkdocs build --clean
+
+# Verificar configuração
+mkdocs --verbose build
+
+# Listar comandos disponíveis
+mkdocs --help
+```
