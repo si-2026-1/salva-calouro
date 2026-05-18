@@ -21,12 +21,14 @@ Um sistema colaborativo que une navegação espacial e planejamento acadêmico. 
 > [Documento de Escopo](escopo/escopo.md)
 
 **O que o sistema faz:**
+
 * Disponibiliza um mapa interativo e sistema de rotas para localização de salas, laboratórios, prédios e serviços.
 * Fornece uma interface para controle de fluxo curricular, acompanhamento do histórico escolar e alertas de pré-requisitos.
 * Oferece uma Base de Conhecimento e FAQ para dúvidas sobre processos universitários (matrícula, editais, etc.).
 * Possui um sistema de gamificação para recompensar veteranos que auxiliam calouros
 
 **O que o sistema NÃO faz:**
+
 * Não realiza a matrícula oficial em disciplinas (apenas auxilia no planejamento).
 * Não substitui os sistemas acadêmicos oficiais da instituição.
 * Não garante vagas nas turmas e disciplinas planejadas no fluxo.

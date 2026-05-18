@@ -8,7 +8,7 @@ changes: Criação do documento
 
 **Descrição:** Responsável pela centralização de dados burocráticos e pela interação social. Reúne a base de conhecimento estática (FAQ), o calendário de prazos da instituição e o fórum colaborativo de perguntas e respostas.
 
-**Requisitos Funcionais Associados:** * RF13, RF14, RF15
+**Requisitos Funcionais Associados:** RF13, RF14, RF15
 
 ---
 

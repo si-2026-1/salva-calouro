@@ -8,7 +8,7 @@ changes: Criação do documento
 
 **Descrição:** Este épico abrange o fluxo de entrada, autenticação e controle de acesso dos usuários na plataforma, garantindo a diferenciação funcional e de permissões entre os perfis que consomem informação e os que a geram.
 
-**Requisitos Funcionais Associados:** * RF01, RF02, RF03, RF04
+**Requisitos Funcionais Associados:** RF01, RF02, RF03, RF04
 
 ---
 

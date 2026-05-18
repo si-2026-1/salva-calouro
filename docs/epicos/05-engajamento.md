@@ -8,7 +8,7 @@ changes: Criação do documento
 
 **Descrição:** Engloba a camada de gamificação do sistema. É responsável por contabilizar as interações positivas dos veteranos, gerenciar o sistema de pontuação/conquistas e renderizar os painéis de reconhecimento da comunidade.
 
-**Requisitos Funcionais Associados:** * RF16, RF17
+**Requisitos Funcionais Associados:** RF16, RF17
 
 ---
 

@@ -8,7 +8,7 @@ changes: Criação do documento
 
 **Descrição:** Trata da parte geoespacial e visual da aplicação. Engloba a renderização do mapa do campus, os mecanismos de busca por pontos de interesse e o algoritmo de traçado de rotas internas para guiar os estudantes.
 
-**Requisitos Funcionais Associados:** * RF05, RF06, RF07, RF08
+**Requisitos Funcionais Associados:** RF05, RF06, RF07, RF08
 
 ---
 

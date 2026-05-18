@@ -8,7 +8,7 @@ changes: Criação do documento
 
 **Descrição:** Focado na gestão da vida acadêmica e no planejamento do curso. Contempla a interface visual do fluxo curricular, permitindo o acompanhamento do progresso, a validação de disciplinas cursadas e a previsão de matrículas futuras.
 
-**Requisitos Funcionais Associados:** * RF09, RF10, RF11, RF12
+**Requisitos Funcionais Associados:** RF09, RF10, RF11, RF12
 
 ---
 
