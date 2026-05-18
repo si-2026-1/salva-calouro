@@ -1,0 +1,41 @@
+site_name: Salva Calouro
+
+nav:
+  - Início: index.md
+  - Problema: problema/problema.md
+  - Escopo: escopo/escopo.md
+  - Requisitos:
+    - Requisitos Funcionais: requisitos/req-funcionais.md
+    - Requisitos Não-Funcionais: requisitos/req-nao-funcionais.md
+  - Épicos:
+    - Gestão de Usuários: epicos/01-gestao-de-usuarios.md
+    - Navegação Espacial: epicos/02-navegacao-espacial.md
+    - Jornada Acadêmica: epicos/03-jornada-academica.md
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - content.code.copy
+    - content.action.edit
+  custom_dir: overrides
+
+markdown_extensions:
+  - meta
+  - pymdownx.superfences
+
+extra:
+  analytics:
+    feedback:
+      title: Esta página foi útil?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: Sim
+          data: 1
+          note: >-
+            Obrigado pelo feedback!
+        - icon: material/thumb-down-outline
+          name: Não
+          data: 0
+          note: >-
+            Obrigado pelo feedback!
