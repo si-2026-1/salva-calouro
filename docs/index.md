@@ -9,7 +9,7 @@ changes: Criação do documento
 Plataforma digital de orientação e integração para novos alunos da Universidade de Brasília (UnB), cruzando dados de localização física com o progresso acadêmico do estudante.
 
 ## O Problema
-No contexto acadêmico da universidade, observa-se que os alunos ingressantes (calouros) enfrentam grande dificuldade de adaptação nos primeiros semestres devido à sobrecarga de informações fragmentadas e à complexidade do espaço físico. 
+No contexto acadêmico da universidade, observa-se que os alunos ingressantes (calouros) enfrentam grande dificuldade de adaptação nos primeiros semestres devido à sobrecarga de informações fragmentadas e à complexidade do espaço físico. De que forma a centralização de informações acadêmicas e a facilitação da orientação espacial podem mitigar as dificuldades de adaptação de alunos ingressantes nos primeiros semestres universitários?
 
 > [Documento de Problema](problema/problema.md)
 
