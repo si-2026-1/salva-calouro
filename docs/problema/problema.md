@@ -6,7 +6,7 @@ changes: Criação do documento
 
 # Definição do Problema
 
-No contexto acadêmico da universidade, observa-se que os alunos ingressantes (calouros) enfrentam grande dificuldade de adaptação nos primeiros semestres devido à sobrecarga de informações fragmentadas e à complexidade do espaço físico.
+No contexto acadêmico da universidade, observa-se que os alunos ingressantes (calouros) enfrentam grande dificuldade de adaptação nos primeiros semestres devido à sobrecarga de informações fragmentadas e à complexidade do espaço físico. De que forma a centralização de informações acadêmicas e a facilitação da orientação espacial podem mitigar as dificuldades de adaptação de alunos ingressantes nos primeiros semestres universitários?
 
 Como Sistema de Informação, o projeto **Salva Calouro** nasce da necessidade de mitigar três grandes desafios do cenário atual:
 
