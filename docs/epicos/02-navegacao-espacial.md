@@ -1,8 +1,10 @@
----
-author: Caio Fernando Roccha de Albuquerque
-date: 2026-05-27
-changes: Revisão e refinamento das histórias de usuário
----
+## Histórico de Alterações
+
+| Data       | Descrição                                         | Autor                               |
+| :--------- | :------------------------------------------------ | :---------------------------------- |
+| 18/05/2026 | Criação do documento com a estrutura inicial.     | Eric Wu Harris                      |
+| 27/05/2026 | Revisão e refinamento das histórias de usuário.   | Caio Fernando Roccha de Albuquerque |
+| 27/05/2026 | Alteração na formatação das histórias de usuário. | Caio Fernando Roccha de Albuquerque |
 
 # Épico 2 — Navegação Espacial
 
