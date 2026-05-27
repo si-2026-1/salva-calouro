@@ -11,6 +11,8 @@ nav:
     - Gestão de Usuários: epicos/01-gestao-de-usuarios.md
     - Navegação Espacial: epicos/02-navegacao-espacial.md
     - Jornada Acadêmica: epicos/03-jornada-academica.md
+    - Informação e Comunidade: epicos/04-informacao-e-comunidade.md
+    - Gamificação e Engajamento: epicos/05-engajamento.md
   - Modelagens:
     - Diagrama Físico: diagramas/diagrama_fisico.md
     - Modelo Entidade-Relacionamento (MER): diagramas/mer.md
