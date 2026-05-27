@@ -1,6 +1,8 @@
 | Data | Descrição | Autor |
 | :--- | :--- | :--- |
 | 27/05/2026 | Adição de diagramas | Eric Wu Harris |
+| 27/05/2026 | Adição de diagrama físico | Davi Bragança e Silva |
+| 27/05/2026 | Adição do MER | Victor Yan Martinez de Avila |
 | 18/05/2026 | Criação do documento | Eric Wu Harris |
 
 # Salva Calouro: Sistema de Auxílio a Calouros
