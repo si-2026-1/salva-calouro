@@ -1,8 +1,7 @@
----
-author: Eric Wu Harris
-date: 2026-05-18
-changes: Criação do documento
----
+| Data | Descrição | Autor |
+| :--- | :--- | :--- |
+| 27/05/2026 | Adição de diagramas | Eric Wu Harris |
+| 18/05/2026 | Criação do documento | Eric Wu Harris |
 
 # Salva Calouro: Sistema de Auxílio a Calouros
 
