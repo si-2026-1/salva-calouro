@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="mer-salva-calouro" name="MER - Salva Calouro">
-        <mxGraphModel dx="1154" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2600" math="0" shadow="0">
+        <mxGraphModel dx="1769" dy="1124" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2600" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -391,7 +391,7 @@
                 <mxCell id="c130" value="" style="endArrow=none;html=1;strokeColor=#9a9a9a;" parent="1" source="c14" target="c129" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="c131" value="MATRICULADO_EM" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                <mxCell id="c131" value="MATRICULADO" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" parent="1" vertex="1">
                     <mxGeometry x="481" y="575" width="158" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="c132" value="1" style="endArrow=none;html=1;strokeColor=#000000;fontSize=12;fontStyle=1;labelBackgroundColor=#ffffff;" parent="1" source="c131" target="c2" edge="1">
@@ -415,8 +415,8 @@
                 <mxCell id="c138" value="Generalizacao total e exclusiva" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=10;" parent="1" vertex="1">
                     <mxGeometry x="760" y="970" width="200" height="24" as="geometry"/>
                 </mxCell>
-                <mxCell id="c139" value="COMPOE_GRADE" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" parent="1" vertex="1">
-                    <mxGeometry x="801" y="515" width="158" height="90" as="geometry"/>
+                <mxCell id="c139" value="PERTENCE" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="520" width="158" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="c140" value="N" style="endArrow=none;html=1;strokeColor=#000000;fontSize=12;fontStyle=1;labelBackgroundColor=#ffffff;" parent="1" source="c139" target="c2" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -550,7 +550,7 @@
                 <mxCell id="c183" value="" style="endArrow=none;html=1;strokeColor=#9a9a9a;" parent="1" source="c179" target="c182" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="c184" value="APLICA_SE_A" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                <mxCell id="c184" value="ABRANGE" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" parent="1" vertex="1">
                     <mxGeometry x="961" y="245" width="158" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="c185" value="N" style="endArrow=none;html=1;strokeColor=#000000;fontSize=12;fontStyle=1;labelBackgroundColor=#ffffff;" parent="1" source="c184" target="c2" edge="1">
