@@ -1,5 +1,6 @@
 | Data       | Descrição                                      | Autor                              |
 | :--------- | :--------------------------------------------- | :--------------------------------- |
+| 28/05/2026 | Criação dos Slides de apresentação             | Roberto Ribeiro Corrêa de O A Neto |
 | 27/05/2026 | Revisão e refinamento das histórias de usuário | Caio Fernando Rocha de Albuquerque |
 | 27/05/2026 | Adição de diagramas                            | Eric Wu Harris                     |
 | 27/05/2026 | Adição de diagrama físico                      | Davi Bragança e Silva              |
