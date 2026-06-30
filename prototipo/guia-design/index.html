@@ -1,0 +1,1658 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Guia de Design e Prototipação — Salva Calouro - Salva Calouro</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-de-design-e-prototipacao-salva-calouro" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Salva Calouro" class="md-header__button md-logo" aria-label="Salva Calouro" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Salva Calouro
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guia de Design e Prototipação — Salva Calouro
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../problema/problema/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Problema
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../escopo/escopo/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Escopo
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../requisitos/req-funcionais/" class="md-tabs__link">
+          
+  
+  
+  Requisitos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../epicos/01-gestao-de-usuarios/" class="md-tabs__link">
+          
+  
+  
+  Épicos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../diagramas/diagrama_fisico/" class="md-tabs__link">
+          
+  
+  
+  Modelagens
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Salva Calouro" class="md-nav__button md-logo" aria-label="Salva Calouro" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Salva Calouro
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../problema/problema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../escopo/escopo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Escopo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Requisitos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/req-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos Funcionais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../requisitos/req-nao-funcionais/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requisitos Não-Funcionais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Épicos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Épicos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos/01-gestao-de-usuarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestão de Usuários
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos/02-navegacao-espacial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Navegação Espacial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos/03-jornada-academica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jornada Acadêmica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos/04-informacao-comunidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Informação e Comunidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epicos/05-engajamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gamificação e Engajamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelagens
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelagens
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagramas/diagrama_fisico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagrama Físico
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagramas/mer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelo Entidade-Relacionamento (MER)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-identidade-visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Identidade Visual
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Identidade Visual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-paleta-de-cores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Paleta de Cores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-tipografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Tipografia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-grid-espacamento-e-raios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Grid, Espaçamento e Raios
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-arquitetura-de-informacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Arquitetura de Informação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Arquitetura de Informação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-mapa-do-aplicativo-sitemap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Mapa do Aplicativo (Sitemap)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-navegacao-principal-bottom-navigation-mobile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Navegação Principal (Bottom Navigation — mobile)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-diferenciacao-de-perfil-us13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Diferenciação de Perfil (US1.3)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-inventario-de-telas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Inventário de Telas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Inventário de Telas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grupo-a-autenticacao-e-perfil-epico-1-rf01rf04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grupo A — Autenticação e Perfil (Épico 1 · RF01–RF04)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupo-b-navegacao-espacial-epico-2-rf05rf08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grupo B — Navegação Espacial (Épico 2 · RF05–RF08)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupo-c-jornada-academica-epico-3-rf09rf12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grupo C — Jornada Acadêmica (Épico 3 · RF09–RF12)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupo-d-informacao-e-comunidade-epico-4-rf13rf15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grupo D — Informação e Comunidade (Épico 4 · RF13–RF15)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupo-e-engajamento-epico-5-rf16rf17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grupo E — Engajamento (Épico 5 · RF16–RF17)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-biblioteca-de-componentes-para-figma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Biblioteca de Componentes (para Figma)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-referencia-do-modelo-de-dados-origem-dos-campos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Referência do Modelo de Dados (origem dos campos)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Referência do Modelo de Dados (origem dos campos)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuario-exemplo-padrao-persona-dos-mockups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usuário-exemplo padrão (persona dos mockups)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fluxos-principais-para-prototipo-navegavel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Fluxos Principais (para protótipo navegável)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-checklist-de-qualidade-rnf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Checklist de Qualidade (RNF)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+
+<h1 id="guia-de-design-e-prototipacao-salva-calouro">Guia de Design e Prototipação — Salva Calouro</h1>
+<p>Documento de apoio para a prototipação do frontend no Figma. Consolida os
+requisitos funcionais (RF), histórias de usuário (US) e o modelo de dados em
+um <strong>inventário de telas, fluxos, componentes e identidade visual</strong>.</p>
+<p>A plataforma é <strong>web responsiva, Mobile-first</strong> (RNF01): todas as telas são
+projetadas primeiro para smartphone (375 px) e depois adaptadas para desktop.</p>
+<hr />
+<h2 id="1-identidade-visual">1. Identidade Visual</h2>
+<h3 id="11-paleta-de-cores">1.1 Paleta de Cores</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Papel</th>
+<th style="text-align: left;">Cor</th>
+<th style="text-align: left;">HEX</th>
+<th style="text-align: left;">Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Primária (Azul UnB)</strong></td>
+<td style="text-align: left;">🔵</td>
+<td style="text-align: left;"><code>#113C75</code></td>
+<td style="text-align: left;">Cabeçalhos, botões primários, links, navegação ativa, marca</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Secundária (Verde)</strong></td>
+<td style="text-align: left;">🟢</td>
+<td style="text-align: left;"><code>#04843D</code></td>
+<td style="text-align: left;">Sucesso, "Concluído", "Liberada para matrícula", confirmações, badges</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Preto / Texto</strong></td>
+<td style="text-align: left;">⚫</td>
+<td style="text-align: left;"><code>#1A1A1A</code></td>
+<td style="text-align: left;">Texto principal (não usar preto puro <code>#000</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Branco / Fundo</strong></td>
+<td style="text-align: left;">⚪</td>
+<td style="text-align: left;"><code>#FFFFFF</code></td>
+<td style="text-align: left;">Fundo principal, cards</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cinza 100 (Surface)</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>#F4F6F9</code></td>
+<td style="text-align: left;">Fundo de seções, áreas secundárias</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cinza 300 (Bordas)</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>#D9DEE6</code></td>
+<td style="text-align: left;">Divisores, bordas de inputs, contornos de cards</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cinza 500 (Texto suave)</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>#6B7280</code></td>
+<td style="text-align: left;">Legendas, placeholders, metadados</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tons de apoio derivados</strong> (para estados e destaques, mantendo a base azul/verde/neutra):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Papel</th>
+<th style="text-align: left;">HEX</th>
+<th style="text-align: left;">Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Azul claro (hover/seleção)</td>
+<td style="text-align: left;"><code>#E7EDF6</code></td>
+<td style="text-align: left;">Fundo de item selecionado, hover sutil</td>
+</tr>
+<tr>
+<td style="text-align: left;">Verde claro</td>
+<td style="text-align: left;"><code>#E3F1E9</code></td>
+<td style="text-align: left;">Fundo de tags/chips de sucesso, disciplina concluída</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alerta / urgente</td>
+<td style="text-align: left;"><code>#C2410C</code></td>
+<td style="text-align: left;">Prazos vencendo, pré-requisito faltando (usar com parcimônia)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Alerta claro</td>
+<td style="text-align: left;"><code>#FDEBE1</code></td>
+<td style="text-align: left;">Fundo de tags de alerta</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Regra de contraste (RNF08 — Acessibilidade): texto sobre azul <code>#113C75</code> deve
+ser branco. Texto sobre verde <code>#04843D</code> deve ser branco. Garantir contraste
+mínimo AA (4.5:1) em todo texto de corpo.</p>
+</blockquote>
+<h3 id="12-tipografia">1.2 Tipografia</h3>
+<p>Sugestão: <strong>Inter</strong> ou <strong>Roboto</strong> (sans-serif legível, boa em telas pequenas).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Estilo</th>
+<th style="text-align: left;">Tamanho / Peso</th>
+<th style="text-align: left;">Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Display</td>
+<td style="text-align: left;">28 / Bold</td>
+<td style="text-align: left;">Títulos de tela</td>
+</tr>
+<tr>
+<td style="text-align: left;">H1</td>
+<td style="text-align: left;">22 / Bold</td>
+<td style="text-align: left;">Cabeçalhos de seção</td>
+</tr>
+<tr>
+<td style="text-align: left;">H2</td>
+<td style="text-align: left;">18 / SemiBold</td>
+<td style="text-align: left;">Subtítulos, títulos de card</td>
+</tr>
+<tr>
+<td style="text-align: left;">Body</td>
+<td style="text-align: left;">16 / Regular</td>
+<td style="text-align: left;">Texto padrão</td>
+</tr>
+<tr>
+<td style="text-align: left;">Body S</td>
+<td style="text-align: left;">14 / Regular</td>
+<td style="text-align: left;">Texto secundário, descrições</td>
+</tr>
+<tr>
+<td style="text-align: left;">Caption</td>
+<td style="text-align: left;">12 / Medium</td>
+<td style="text-align: left;">Metadados, tags, labels de campo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-grid-espacamento-e-raios">1.3 Grid, Espaçamento e Raios</h3>
+<ul>
+<li><strong>Espaçamento base:</strong> múltiplos de 4 px (4, 8, 12, 16, 24, 32).</li>
+<li><strong>Margem lateral mobile:</strong> 16 px. <strong>Desktop:</strong> container central de 1140 px.</li>
+<li><strong>Raio de borda:</strong> 12 px (cards), 8 px (botões/inputs), full (chips/avatares).</li>
+<li><strong>Sombra de card:</strong> sutil, <code>0 2px 8px rgba(17,60,117,0.08)</code>.</li>
+<li><strong>Touch target mínimo:</strong> 44 × 44 px (acessibilidade em locomoção).</li>
+</ul>
+<hr />
+<h2 id="2-arquitetura-de-informacao">2. Arquitetura de Informação</h2>
+<h3 id="21-mapa-do-aplicativo-sitemap">2.1 Mapa do Aplicativo (Sitemap)</h3>
+<div class="highlight"><pre><span></span><code>Salva Calouro
+├── Onboarding / Autenticação (público)
+│   ├── Splash / Boas-vindas
+│   ├── Login
+│   ├── Cadastro (com seleção de curso)
+│   └── Recuperar senha
+│
+├── App autenticado (navegação principal — bottom nav)
+│   ├── 🗺️  Mapa            (Épico 2)
+│   ├── 🎓  Meu Fluxo       (Épico 3)
+│   ├── 💬  Comunidade      (Épico 4)
+│   ├── 🏆  Ranking         (Épico 5)
+│   └── 👤  Perfil          (Épicos 1 e 5)
+│
+└── Telas internas (acessadas a partir das principais)
+    ├── Detalhe de Ponto de Interesse / Rota
+    ├── Detalhe de Disciplina (ementa)
+    ├── FAQ + Calendário Acadêmico
+    ├── Tópico do Fórum + Respostas + Criar postagem
+    └── Configurações de Perfil
+</code></pre></div>
+<h3 id="22-navegacao-principal-bottom-navigation-mobile">2.2 Navegação Principal (Bottom Navigation — mobile)</h3>
+<p>Barra fixa inferior com 5 itens. Ícone + label. Item ativo em azul <code>#113C75</code>.</p>
+<p><code>[ Mapa ] [ Fluxo ] [ Comunidade ] [ Ranking ] [ Perfil ]</code></p>
+<p>No <strong>desktop</strong>, converter para barra lateral (sidebar) ou top nav horizontal com
+os mesmos 5 destinos + logo à esquerda.</p>
+<h3 id="23-diferenciacao-de-perfil-us13">2.3 Diferenciação de Perfil (US1.3)</h3>
+<p>A interface se adapta ao perfil:</p>
+<ul>
+<li><strong>Calouro</strong> — foco em consumir: Mapa, Fluxo, FAQ, leitura do fórum. CTA de
+  introdução/dicas em destaque.</li>
+<li><strong>Veterano</strong> — tudo do calouro + ações de geração de conteúdo: botão "Criar
+  postagem" no fórum, edição de POIs, visualização de pontuação/medalhas em
+  destaque no perfil.</li>
+</ul>
+<p>Use estados de componente no Figma (ex.: botão "Criar postagem" com variante
+<code>visível/oculto</code>) para representar a diferença de permissão.</p>
+<hr />
+<h2 id="3-inventario-de-telas">3. Inventário de Telas</h2>
+<p>Cada tela referencia o Épico, as US e os RF que atende.</p>
+<h3 id="grupo-a-autenticacao-e-perfil-epico-1-rf01rf04">Grupo A — Autenticação e Perfil (Épico 1 · RF01–RF04)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">#</th>
+<th style="text-align: left;">Tela</th>
+<th style="text-align: left;">US</th>
+<th style="text-align: left;">Elementos-chave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">A1</td>
+<td style="text-align: left;"><strong>Boas-vindas / Splash</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Logo, slogan, botões "Entrar" e "Criar conta"</td>
+</tr>
+<tr>
+<td style="text-align: left;">A2</td>
+<td style="text-align: left;"><strong>Login</strong></td>
+<td style="text-align: left;">US1.2</td>
+<td style="text-align: left;">E-mail institucional, senha, "Manter-me conectado", erro genérico, link "Esqueci a senha"</td>
+</tr>
+<tr>
+<td style="text-align: left;">A3</td>
+<td style="text-align: left;"><strong>Cadastro</strong></td>
+<td style="text-align: left;">US1.1</td>
+<td style="text-align: left;">Nome, e-mail institucional, senha, <strong>dropdown de curso (cursos ativos da UnB)</strong>, validação de e-mail, semestre de ingresso</td>
+</tr>
+<tr>
+<td style="text-align: left;">A4</td>
+<td style="text-align: left;"><strong>Perfil</strong></td>
+<td style="text-align: left;">US1.4, US5.1</td>
+<td style="text-align: left;">Avatar, nome, curso, <strong>pontuação total e medalhas</strong> (veterano), atalhos, botão "Editar" e "Sair"</td>
+</tr>
+<tr>
+<td style="text-align: left;">A5</td>
+<td style="text-align: left;"><strong>Configurações de Perfil</strong></td>
+<td style="text-align: left;">US1.4</td>
+<td style="text-align: left;">Editar nome, foto, curso; alterar e-mail/senha <strong>exige confirmação de senha atual</strong>; botão "Salvar Alterações"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="grupo-b-navegacao-espacial-epico-2-rf05rf08">Grupo B — Navegação Espacial (Épico 2 · RF05–RF08)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">#</th>
+<th style="text-align: left;">Tela</th>
+<th style="text-align: left;">US</th>
+<th style="text-align: left;">Elementos-chave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">B1</td>
+<td style="text-align: left;"><strong>Mapa Interativo</strong></td>
+<td style="text-align: left;">US2.1</td>
+<td style="text-align: left;">Mapa do campus com zoom/pan, camadas de prédios/blocos, "Ponto Azul" de geolocalização, barra de busca flutuante</td>
+</tr>
+<tr>
+<td style="text-align: left;">B2</td>
+<td style="text-align: left;"><strong>Busca de POI</strong></td>
+<td style="text-align: left;">US2.2</td>
+<td style="text-align: left;">Campo com autocomplete, suporte a siglas (PJC, PAT, ICC), resultados <strong>categorizados</strong> (Auditórios, Banheiros, Secretarias, RU…)</td>
+</tr>
+<tr>
+<td style="text-align: left;">B3</td>
+<td style="text-align: left;"><strong>Detalhe do Local (modal/aba)</strong></td>
+<td style="text-align: left;">US2.4</td>
+<td style="text-align: left;">Nome oficial, foto, horário de funcionamento, descrição, botão <strong>"Traçar Rota"</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">B4</td>
+<td style="text-align: left;"><strong>Rota traçada</strong></td>
+<td style="text-align: left;">US2.3</td>
+<td style="text-align: left;">Linha de rota sobre o mapa, tempo estimado de caminhada, origem/destino, <strong>toggle "Rota acessível" (rampas/elevadores)</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="grupo-c-jornada-academica-epico-3-rf09rf12">Grupo C — Jornada Acadêmica (Épico 3 · RF09–RF12)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">#</th>
+<th style="text-align: left;">Tela</th>
+<th style="text-align: left;">US</th>
+<th style="text-align: left;">Elementos-chave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">C1</td>
+<td style="text-align: left;"><strong>Meu Fluxo (Grade)</strong></td>
+<td style="text-align: left;">US3.1, US3.2</td>
+<td style="text-align: left;">Colunas por semestre, <strong>cards de disciplina</strong> (nome, código, créditos, natureza), linhas de pré-requisito, barra de progresso (% obrigatórias / optativas)</td>
+</tr>
+<tr>
+<td style="text-align: left;">C2</td>
+<td style="text-align: left;"><strong>Disciplina — estados</strong></td>
+<td style="text-align: left;">US3.2, US3.3</td>
+<td style="text-align: left;">Estados do card: <em>Concluída</em> (verde), <em>Liberada</em> (destaque), <em>Bloqueada</em> (cinza/cadeado), <em>Cursando</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">C3</td>
+<td style="text-align: left;"><strong>Detalhe da Disciplina (modal)</strong></td>
+<td style="text-align: left;">US3.4</td>
+<td style="text-align: left;">Código oficial UnB, departamento, ementa textual, créditos, carga horária, bibliografia, <strong>pré-requisitos e pós-requisitos</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="grupo-d-informacao-e-comunidade-epico-4-rf13rf15">Grupo D — Informação e Comunidade (Épico 4 · RF13–RF15)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">#</th>
+<th style="text-align: left;">Tela</th>
+<th style="text-align: left;">US</th>
+<th style="text-align: left;">Elementos-chave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">D1</td>
+<td style="text-align: left;"><strong>FAQ / Base de Conhecimento</strong></td>
+<td style="text-align: left;">US4.1</td>
+<td style="text-align: left;">Busca textual no topo, <strong>categorias</strong> (Secretaria, Alimentação, Estágios, Matrícula), respostas em <strong>accordions</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">D2</td>
+<td style="text-align: left;"><strong>Fórum (lista de tópicos)</strong></td>
+<td style="text-align: left;">US4.2</td>
+<td style="text-align: left;">Lista de tópicos com título/categoria/autor/votos, filtro, botão <strong>"Criar Nova Postagem"</strong> (veterano)</td>
+</tr>
+<tr>
+<td style="text-align: left;">D3</td>
+<td style="text-align: left;"><strong>Tópico + Respostas</strong></td>
+<td style="text-align: left;">US4.2</td>
+<td style="text-align: left;">Conteúdo do tópico, respostas encadeadas, <strong>upvote</strong>, marcação de "melhor resposta", botão denunciar</td>
+</tr>
+<tr>
+<td style="text-align: left;">D4</td>
+<td style="text-align: left;"><strong>Criar Postagem</strong></td>
+<td style="text-align: left;">US4.2</td>
+<td style="text-align: left;">Título, categoria, corpo do texto, publicar</td>
+</tr>
+<tr>
+<td style="text-align: left;">D5</td>
+<td style="text-align: left;"><strong>Calendário Acadêmico</strong></td>
+<td style="text-align: left;">US4.3</td>
+<td style="text-align: left;">Timeline/calendário do semestre, <strong>tags de alerta</strong> para prazos da semana, filtro por tipo, exportar (Google Calendar)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="grupo-e-engajamento-epico-5-rf16rf17">Grupo E — Engajamento (Épico 5 · RF16–RF17)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">#</th>
+<th style="text-align: left;">Tela</th>
+<th style="text-align: left;">US</th>
+<th style="text-align: left;">Elementos-chave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">E1</td>
+<td style="text-align: left;"><strong>Ranking (Leaderboard)</strong></td>
+<td style="text-align: left;">US5.2</td>
+<td style="text-align: left;">Lista ordenada por pontuação: posição, avatar, nome, curso, medalha principal; <strong>filtro temporal</strong> (Mensal / Semestral / Geral)</td>
+</tr>
+<tr>
+<td style="text-align: left;">E2</td>
+<td style="text-align: left;"><strong>Medalhas / Conquistas</strong></td>
+<td style="text-align: left;">US5.1</td>
+<td style="text-align: left;">Galeria de badges desbloqueadas/bloqueadas, pontos necessários, integrada ao Perfil (A4)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-biblioteca-de-componentes-para-figma">4. Biblioteca de Componentes (para Figma)</h2>
+<p>Crie como <strong>componentes com variantes</strong> para reuso e consistência.</p>
+<p><strong>Globais</strong>
+- <strong>Botão</strong>: variantes <code>Primário</code> (azul preenchido), <code>Secundário</code> (contorno azul),
+  <code>Sucesso</code> (verde), <code>Texto/link</code>, <code>Desabilitado</code>; tamanhos <code>M</code>/<code>L</code>.
+- <strong>Campo de texto</strong>: estados <code>default</code>, <code>foco</code>, <code>erro</code>, <code>preenchido</code>; com label e helper.
+- <strong>Dropdown / Select</strong> (curso, categoria, filtros).
+- <strong>Chip / Tag</strong>: <code>categoria</code>, <code>sucesso</code> (verde), <code>alerta</code> (laranja), <code>neutro</code>.
+- <strong>App Bar</strong> (topo): título + ação contextual.
+- <strong>Bottom Navigation</strong>: 5 itens, estado ativo/inativo.
+- <strong>Avatar</strong>: tamanhos <code>S</code>/<code>M</code>/<code>L</code>, com placeholder.
+- <strong>Modal / Bottom Sheet</strong>: para detalhes (POI, disciplina).
+- <strong>Card</strong> (base reutilizável).
+- <strong>Barra de progresso</strong> (fluxo curricular).
+- <strong>Estado vazio</strong> e <strong>Skeleton/loading</strong> (RNF03 — feedback em até 3 s).
+- <strong>Toast / mensagem de erro</strong> (login, validações).</p>
+<p><strong>Específicos</strong>
+- <strong>Card de Disciplina</strong> (variantes de estado: Concluída / Liberada / Bloqueada / Cursando / Optativa).
+- <strong>Card de Resultado de Busca de POI</strong> (com categoria).
+- <strong>Card de Detalhe de Local</strong> (foto, horário, "Traçar rota").
+- <strong>Item de Ranking</strong> (posição, avatar, nome, curso, medalha).
+- <strong>Badge / Medalha</strong> (desbloqueada / bloqueada).
+- <strong>Item de FAQ (accordion)</strong>.
+- <strong>Card de Tópico do Fórum</strong> (com upvote e contagem de respostas).
+- <strong>Item de Calendário/Timeline</strong> (com tag de urgência).</p>
+<hr />
+<h2 id="5-referencia-do-modelo-de-dados-origem-dos-campos">5. Referência do Modelo de Dados (origem dos campos)</h2>
+<p>Resumo do diagrama físico para alimentar os textos/placeholders do protótipo
+com dados coerentes.</p>
+<h3 id="usuario-exemplo-padrao-persona-dos-mockups">Usuário-exemplo padrão (persona dos mockups)</h3>
+<p>Para manter consistência em todas as telas, os dados de exemplo do usuário
+logado usam sempre a mesma persona fictícia:</p>
+<ul>
+<li><strong>Nome:</strong> João Rossi  ·  <strong>Iniciais (avatar):</strong> JR</li>
+<li><strong>E-mail:</strong> joao.rossi@aluno.unb.br</li>
+<li>
+<p><strong>Curso:</strong> Engenharia de Software · 3º semestre  ·  <strong>Perfil:</strong> Veterano</p>
+</li>
+<li>
+<p><strong>USUARIO</strong>: nome, email, matricula, curso → base dos perfis.</p>
+</li>
+<li><strong>CALOURO</strong>: semestre_ingresso.</li>
+<li><strong>VETERANO</strong>: pontuacao_total, semestre_atual.</li>
+<li><strong>CURSO</strong>: codigo, nome, grau, turno, departamento.</li>
+<li><strong>DISCIPLINA</strong>: codigo, nome, ementa, carga_horaria, creditos.</li>
+<li><strong>PERTENCE</strong> (curso↔disciplina): semestre_sugerido, tipo (obrig./optativa).</li>
+<li><strong>PRE_REQUISITO</strong>: disciplina_requer ↔ disciplina_prereq.</li>
+<li><strong>CURSOU</strong> (usuário↔disciplina): status, mencao, periodo, ano.</li>
+<li><strong>PONTO_INTERESSE</strong>: nome, tipo, latitude, longitude, descricao, horario_funcionamento.</li>
+<li><strong>ROTA</strong>: distancia_m, tempo_estimado_min, ponto_origem/destino.</li>
+<li><strong>EVENTO_CALENDARIO</strong>: titulo, descricao, tipo, data_inicio, data_fim (relacionado a CURSO via ABRANGE).</li>
+<li><strong>ARTIGO_FAQ</strong>: titulo, conteudo, categoria, palavras_chave, data_publicacao.</li>
+<li><strong>TOPICO_FORUM</strong>: titulo, conteudo, categoria, status, data_criacao.</li>
+<li><strong>RESPOSTA</strong>: conteudo, melhor_resposta (bool).</li>
+<li><strong>CONQUISTA</strong>: nome, descricao, icone, pontos_necessarios.</li>
+<li><strong>CONQUISTOU</strong> (veterano↔conquista): data_conquista.</li>
+</ul>
+<hr />
+<h2 id="6-fluxos-principais-para-prototipo-navegavel">6. Fluxos Principais (para protótipo navegável)</h2>
+<ol>
+<li><strong>Onboarding:</strong> A1 → A3 (cadastro com curso) → B1 (Mapa, home padrão).</li>
+<li><strong>Encontrar uma sala:</strong> B1 → B2 (busca "ICC") → B3 (detalhe) → B4 (rota acessível).</li>
+<li><strong>Planejar matrícula:</strong> C1 (fluxo) → marcar concluídas → ver "liberadas" → C3 (ementa).</li>
+<li><strong>Tirar dúvida:</strong> D1 (FAQ busca) → sem resposta → D2 (fórum) → D3 (tópico) → upvote.</li>
+<li><strong>Engajamento veterano:</strong> D4 (criar postagem) → +pontos → E2 (medalha) → E1 (ranking).</li>
+</ol>
+<hr />
+<h2 id="7-checklist-de-qualidade-rnf">7. Checklist de Qualidade (RNF)</h2>
+<ul>
+<li>[ ] <strong>Mobile-first</strong> (RNF01): toda tela validada em 375 px antes do desktop.</li>
+<li>[ ] <strong>Personalização por curso</strong> (RNF02): fluxo, mapa e FAQ refletem o curso do usuário.</li>
+<li>[ ] <strong>Feedback ≤ 3 s</strong> (RNF03): skeletons/loaders em mapa, rota e fluxo.</li>
+<li>[ ] <strong>Erros seguros</strong> (RNF05): login não revela qual campo está incorreto (US1.2).</li>
+<li>[ ] <strong>Acessibilidade</strong> (RNF08): contraste AA, touch targets 44 px, foco visível,
+      toggle de rota acessível (US2.3).</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Esta página foi útil?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="Sim" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="Não" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Obrigado pelo feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Obrigado pelo feedback!
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
