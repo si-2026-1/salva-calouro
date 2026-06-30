@@ -101,3 +101,7 @@ mkdocs --verbose build
 # Listar comandos disponíveis
 mkdocs --help
 ```
+
+## Links
+
+[Prototipação](https://www.figma.com/design/OXKKcagHWRRzG0XCwU79pO/SI---Salva-Calouro?node-id=0-1&p=f&t=z1tKezGkALLh1RO3-0)
